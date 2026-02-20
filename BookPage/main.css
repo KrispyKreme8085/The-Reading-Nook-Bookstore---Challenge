@@ -1,0 +1,98 @@
+/* Centers all content on screen */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Page holds all content on page except for header and footer */
+.page h1 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* Image at the top of page and below header */
+.topImg {
+    width: 95vw;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+/* Puts books in responsive grid */
+.books {
+    width: 95vw;
+    height: 465px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    overflow: hidden;
+}
+
+.book {
+    position: relative;
+    color: white;
+}
+
+/* I didnt want to change the book height and width 1000 different times so I made a variable */
+:root {
+    --bookSize: 225px;
+}
+
+.book img {
+    width: var(--bookSize);
+    height: var(--bookSize);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+/* The green box for the books */
+.book section {
+    position: absolute;
+    background-color: #1F3A34;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 125px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+.book h1 {
+    font-size: 15px;
+    height: 15px;
+}
+
+.book p {
+    font-size: 10px;
+    height: 15px;
+}
+
+/* Arrow navigation for books */
+.bookNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -25px;
+}
+
+.bookNav img {
+    width: 30px;
+    height: 30px;
+}
+
+.bookNav img:first-child {
+    transform: rotate(180deg);
+}

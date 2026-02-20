@@ -1,0 +1,78 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Set global styles for body, text, header, and footer */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+h1 {
+    font-family: Pacifico;
+}
+
+header {
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 98vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header img {
+    height: 150px;
+}
+
+header ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 3px solid black;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer img {
+    height: 70px;
+}
+
+@media screen and (max-width: 500px) {
+    header ul {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
