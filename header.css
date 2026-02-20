@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 header {
     border-bottom: 3px solid black;
     width: 98vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: Roboto;
 }
 
 header img {
