@@ -14,11 +14,14 @@ h1 {
 }
 
 header {
+    background-color: white;
     border-bottom: 3px solid black;
     width: 98vw;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 
 header img {
@@ -41,7 +44,7 @@ header a {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border-top: 3px solid black;
     width: 98vw;
@@ -51,6 +54,7 @@ footer {
     justify-content: space-between;
     gap: 5px;
     padding: 10px;
+    background-color: white;
 }
 
 footer div {
@@ -61,4 +65,14 @@ footer div {
 
 footer img {
     height: 70px;
+}
+
+@media screen and (max-width: 500px) {
+    header ul {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
 }
