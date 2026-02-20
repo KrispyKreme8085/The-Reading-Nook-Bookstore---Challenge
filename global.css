@@ -1,7 +1,8 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-
+/* Set global styles for body, text, header, and footer */
 body {
     padding: 0;
     margin: 0;
@@ -37,4 +38,27 @@ header ul {
 header a {
     text-decoration: none;
     color: black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid black;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer img {
+    height: 70px;
 }
