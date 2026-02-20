@@ -39,3 +39,26 @@ header a {
     text-decoration: none;
     color: black;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid black;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer img {
+    height: 70px;
+}
